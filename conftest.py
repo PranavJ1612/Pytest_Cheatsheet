@@ -22,7 +22,7 @@ def dataLoad():
 
 # Parametrized Fixture -
 # For having param fixtures we need u use params= ['values...'] in fixture.
-# For using these params value we use 'request' keyword in crossBrowser and for returning it use 'request.para,'
+# For using these params value we use 'request' keyword in crossBrowser and for returning it use 'request.param'
 @pytest.fixture(params=[("chrome", "pranav", "jagdale"),("Firefox", "prajwal"),("IE", "test")])
 def crossBrowser(request):
     return request.param
